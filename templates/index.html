@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Interface</title>
+    <style>
+        .container {
+            width: 50%;
+            margin: auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            
+        }
+        .message {
+            background-color: #f2f2f2;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .bot-message {
+            text-align: left;
+        }
+        .user-message {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="message bot-message"><p>{{ message }}</p></div>
+
+        {% if options %}
+        <form method="POST">
+            <button type="submit" name="service" value="Photography">Photography</button>
+            <button type="submit" name="service" value="Videography">Videography</button>
+            <button type="submit" name="service" value="Both">Both</button>
+        </form>
+        {% elif locations %}
+        <form method="POST">
+            <select name="location">
+                {% for location in locations %}
+                <option value="{{ location }}">{{ location }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+        {% elif date %}
+        <form method="POST">
+            <input type="date" name="date">
+            <button type="submit">Submit</button>
+        </form>
+        {% elif button %}
+        <form method="POST">
+            <input type="hidden" name="service" value="{{ request.form.service }}">
+            <input type="hidden" name="location" value="{{ request.form.location }}">
+            <input type="hidden" name="date" value="{{ request.form.date }}">
+            <button type="submit" name="check_availability">Check Availabilities</button>
+        </form>
+        {% elif employees %}
+        <ul>
+            {% for employee in employees %}
+            <li>{{ employee }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+</body>
+</html>
