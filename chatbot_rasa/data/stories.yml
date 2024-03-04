@@ -1,0 +1,14 @@
+    - action: action_select_date_time
+    - action: utter_selected_date_time
+
+- story: get available heroes
+  steps:
+    - intent: available_heroes
+    - action: utter_looking_for_heroes
+    - action: action_get_available_heroes
+    - action: utter_available_heroes
+
+- story: ask queries
+  steps:
+    - intent: queries
+    - action: utter_ask_queries

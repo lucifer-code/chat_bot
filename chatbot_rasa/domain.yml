@@ -1,0 +1,38 @@
+intents:
+  - greet
+  - photographer
+  - videographer
+  - appointment
+  - available_heroes
+  - queries
+
+entities:
+  - date
+  - time
+
+responses:
+  utter_greet:
+    - text: "Hello! Are you looking to hire a photographer or a videographer?"
+
+  utter_selected_choice:
+    - text: "You have selected a: {user_choice}"
+
+  utter_ask_appointment:
+    - text: "Great! Can you provide a preferred date or time for the appointment?"
+
+  utter_selected_date_time:
+    - text: "You have selected {date} at {time}."
+
+  utter_looking_for_heroes:
+    - text: "Looking for available heroes..."
+
+  utter_available_heroes:
+    - text: "Here is a list of available heroes on {date} at {time}: {available_heroes}"
+
+  utter_ask_queries:
+    - text: "Do you have any other queries?"
+
+actions:
+  - action_select_choice
+  - action_select_date_time
+  - action_get_available_heroes

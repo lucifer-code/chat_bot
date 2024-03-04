@@ -1,0 +1,30 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"available_heroes\"}}]": "utter_looking_for_heroes",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"available_heroes\"}}, {\"prev_action\": {\"action_name\": \"utter_looking_for_heroes\"}, \"user\": {\"intent\": \"available_heroes\"}}]": "action_get_available_heroes",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"available_heroes\"}}, {\"prev_action\": {\"action_name\": \"utter_looking_for_heroes\"}, \"user\": {\"intent\": \"available_heroes\"}}, {\"prev_action\": {\"action_name\": \"action_get_available_heroes\"}, \"user\": {\"intent\": \"available_heroes\"}}]": "utter_available_heroes",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"available_heroes\"}}, {\"prev_action\": {\"action_name\": \"utter_looking_for_heroes\"}, \"user\": {\"intent\": \"available_heroes\"}}, {\"prev_action\": {\"action_name\": \"action_get_available_heroes\"}, \"user\": {\"intent\": \"available_heroes\"}}, {\"prev_action\": {\"action_name\": \"utter_available_heroes\"}, \"user\": {\"intent\": \"available_heroes\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"appointment\"}}]": "utter_ask_appointment",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"appointment\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_appointment\"}, \"user\": {\"intent\": \"appointment\"}}]": "action_select_date_time",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"appointment\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_appointment\"}, \"user\": {\"intent\": \"appointment\"}}, {\"prev_action\": {\"action_name\": \"action_select_date_time\"}, \"user\": {\"intent\": \"appointment\"}}]": "utter_selected_date_time",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"appointment\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_appointment\"}, \"user\": {\"intent\": \"appointment\"}}, {\"prev_action\": {\"action_name\": \"action_select_date_time\"}, \"user\": {\"intent\": \"appointment\"}}, {\"prev_action\": {\"action_name\": \"utter_selected_date_time\"}, \"user\": {\"intent\": \"appointment\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"appointment\"}}]",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"appointment\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_appointment\"}, \"user\": {\"intent\": \"appointment\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"appointment\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_appointment\"}, \"user\": {\"intent\": \"appointment\"}}, {\"prev_action\": {\"action_name\": \"action_select_date_time\"}, \"user\": {\"intent\": \"appointment\"}}, {\"prev_action\": {\"action_name\": \"utter_selected_date_time\"}, \"user\": {\"intent\": \"appointment\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"appointment\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_appointment\"}, \"user\": {\"intent\": \"appointment\"}}, {\"prev_action\": {\"action_name\": \"action_select_date_time\"}, \"user\": {\"intent\": \"appointment\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"available_heroes\"}}, {\"prev_action\": {\"action_name\": \"utter_looking_for_heroes\"}, \"user\": {\"intent\": \"available_heroes\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"available_heroes\"}}, {\"prev_action\": {\"action_name\": \"utter_looking_for_heroes\"}, \"user\": {\"intent\": \"available_heroes\"}}, {\"prev_action\": {\"action_name\": \"action_get_available_heroes\"}, \"user\": {\"intent\": \"available_heroes\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"available_heroes\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"available_heroes\"}}, {\"prev_action\": {\"action_name\": \"utter_looking_for_heroes\"}, \"user\": {\"intent\": \"available_heroes\"}}, {\"prev_action\": {\"action_name\": \"action_get_available_heroes\"}, \"user\": {\"intent\": \"available_heroes\"}}, {\"prev_action\": {\"action_name\": \"utter_available_heroes\"}, \"user\": {\"intent\": \"available_heroes\"}}]"
+    ]
+  }
+}

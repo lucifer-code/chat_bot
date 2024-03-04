@@ -1,0 +1,43 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - Hello
+    - Hey
+    - Greetings
+
+- intent: photographer
+  examples: |
+    - I want to hire a photographer
+    - Photographer
+    - Need a photographer
+    - Looking for photography services
+
+- intent: videographer
+  examples: |
+    - I want to hire a videographer
+    - Videographer
+    - Need a videographer
+    - Looking for videography services
+
+- intent: appointment
+  examples: |
+    - Preferred date and time
+    - Schedule appointment
+    - When are you available
+    - Set up a meeting
+
+- intent: available_heroes
+  examples: |
+    - Available photographers
+    - Who is available
+    - List of available videographers
+    - Heroes for my event
+
+- intent: queries
+  examples: |
+    - Any other questions
+    - Additional information
+    - Queries
