@@ -47,17 +47,16 @@
             position: absolute;
             bottom: 5px;
             left: 15px;
-            width: 5px;
-            height: 5px;
-            background-color: #4caf50;
-            border-radius: 50%;
-            animation: pulse 1s infinite;
+            width: 10px;
+            height: 2px;
+            background-color: #ccc;
+            animation: typing 0.8s infinite;
         }
 
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.5); }
-            100% { transform: scale(1); }
+        @keyframes typing {
+            0% { width: 10px; }
+            50% { width: 30px; }
+            100% { width: 10px; }
         }
 
         form {

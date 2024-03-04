@@ -14,7 +14,15 @@ def get_db_connection():
         port='5432'
     )
     return connection
-
+# def get_db_connection():
+#     connection = psycopg2.connect(
+#         dbname='fxwhzpuc',
+#         user='fxwhzpuc',
+#         password='c0mqfLrJKEU5inwmqlUMkft0Y5n2-Jml',
+#         host='ruby.db.elephantsql.com',
+#         port='5432'
+#     )
+#     return connection
 # Function to get available locations from the database
 def get_locations():
     conn = get_db_connection()
